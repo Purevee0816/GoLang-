@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug  4 18:00:21 2022
+# Make data base, printed on Thu Aug  4 18:25:05 2022
 
 # Variables
 
@@ -39,7 +39,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/purev/Desktop/GoLang/go
+CURDIR := /home/purev/Desktop/GoLang-
 # makefile
 SHELL = /bin/sh
 # environment
@@ -52,8 +52,8 @@ _ = /usr/bin/code
 JOURNAL_STREAM = 8:58664
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
@@ -73,7 +73,9 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = mn_MN
 # environment
-VSCODE_CWD = /home/purev/Desktop/GoLang/go
+VSCODE_CWD = /home/purev/Desktop/GoLang-
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -86,6 +88,8 @@ GJS_DEBUG_OUTPUT = stderr
 SESSION_MANAGER = local/purev-OptiPlex-5080:@/tmp/.ICE-unix/2171,unix/purev-OptiPlex-5080:/tmp/.ICE-unix/2171
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GOPATH = /home/purev/go
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -107,7 +111,7 @@ GIO_LAUNCHED_DESKTOP_FILE_PID = 11532
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/purev/Desktop/GoLang/go
+PWD = /home/purev/Desktop/GoLang-
 # default
 .LOADED := 
 # environment
@@ -163,7 +167,7 @@ USER = purev
 # environment
 LC_MONETARY = mn_MN
 # makefile
-.DEFAULT_GOAL := postgres
+.DEFAULT_GOAL := 
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
@@ -173,7 +177,7 @@ LC_TELEPHONE = mn_MN
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/purev/Desktop/GoLang
+OLDPWD = /home/purev/Desktop/GoLang-/go
 # default
 .VARIABLES := 
 # automatic
@@ -235,7 +239,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 11532
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=20/136=15%
+# Load=113/1024=11%, Rehash=0, Collisions=20/135=15%
 
 # Pattern-specific Variable Values
 
@@ -243,22 +247,15 @@ VSCODE_PID = 11532
 
 # Directories
 
-# . (device 66306, inode 5898293): 5 files, no impossibilities.
+# . (device 66306, inode 3288256): 9 files, no impossibilities.
 
-# 5 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
-
-postgres:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
 
 # Not a target:
 all:
@@ -267,54 +264,48 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY: createdb
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-04 17:56:49.86057438
-#  File has been updated.
-#  Successfully updated.
-
-createdb:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
-	docker exec -it postgres12 createdb --username=root --owner=root simple_bank
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+ 
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-dropdb:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
-	docker exec -it postgres12 dropdb simple_bank
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
- 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 112 B / avg = 8 B
-# current buf: size = 8162 B / used = 112 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 155 B / avg = 9 B
+# current buf: size = 8162 B / used = 155 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 23 / hit rate = 39%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/23=4%
-# Finished Make data base on Thu Aug  4 18:00:21 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Thu Aug  4 18:25:05 2022
 
  
